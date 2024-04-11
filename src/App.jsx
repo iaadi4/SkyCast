@@ -87,10 +87,10 @@ function App() {
       <div className='flex flex-row h-[30%] mt-10 pt-4 sm:pt-0 '>
         <div className='flex flex-row basis-1/2 items-center'>
           <div id='weather-icon' className='flex flex-row basis-1/2 justify-end'>
-            {icon && <img src={icon} alt="Weather Icon" className=" h-24 w-24 md:h-32 md:w-32" />}
+            {icon && <img src={icon} alt="Weather Icon" className=" h-20 w-20 md:h-32 md:w-32" />}
           </div>
           <div className='basis-1/2'>
-            <p className='text-white text-5xl md:text-6xl'>{tempreture}°</p>
+            <p className='text-white text-4xl md:text-6xl'>{tempreture}°</p>
             <p className='text-white mt-2 text-lg'>{condition}</p>
           </div>
         </div>
@@ -98,30 +98,30 @@ function App() {
         <div className='flex flex-col basis-1/2 bg-white/20 rounded-lg mr-5 shadow-lg'>
           <div className='flex flex-row basis-1/2 justify-evenly'>
             <div className='flex flex-col justify-center items-center'>
-              <p className='text-white md:text-xl font-semibold'>{maxTemp}°</p>
+              <p className='text-white md:text-xl sm:font-semibold'>{maxTemp}°</p>
               <p className='text-white'>High</p>
             </div>
-            <div className='flex flex-col justify-center items-center font-semibold'>
-              <p className='text-white md:text-xl '>{wind}kph</p>
+            <div className='flex flex-col justify-center items-center'>
+              <p className='text-white md:text-xl sm:font-semibold'>{wind}kph</p>
               <p className='text-white'>Wind</p>
             </div>
-            <div className='flex flex-col justify-center items-center font-semibold'>
-              <p className='text-white  md:text-xl'>{sunrise}</p>
+            <div className='flex flex-col justify-center items-center'>
+              <p className='text-white  md:text-xl sm:font-semibold'>{sunrise}</p>
               <p className='text-white'>Sunrise</p>
             </div>
           </div>
           
           <div className='flex flex-row basis-1/2 justify-evenly'>
             <div className='flex flex-col justify-center items-center'>
-              <p className='text-white md:text-xl font-semibold'>{minTemp}°</p>
+              <p className='text-white md:text-xl sm:font-semibold'>{minTemp}°</p>
               <p className='text-white'>Low</p>
             </div>
-            <div className='flex flex-col justify-center items-center font-semibold'>
-              <p className='text-white text-lg md:text-xl '>{cloud}%</p>
+            <div className='flex flex-col justify-center items-center'>
+              <p className='text-white text-lg md:text-xl sm:font-semibold'>{cloud}%</p>
               <p className='text-white'>Cloud</p>
             </div>
-            <div className='flex flex-col justify-center items-center font-semibold'>
-              <p className='text-white md:text-xl'>{sunset}</p>
+            <div className='flex flex-col justify-center items-center'>
+              <p className='text-white md:text-xl sm:font-semibold'>{sunset}</p>
               <p className='text-white'>Sunset</p>
             </div>
           </div>
